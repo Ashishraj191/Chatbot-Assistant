@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // ⚠️ REPLACE WITH YOUR NEW KEY
-const API_KEY = "AIzaSyDdPQCDhmEVN-5CF0QyIAN3jgRPehg5ahc"; 
+const API_KEY = "Enter API KEYS"; 
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
@@ -111,4 +111,5 @@ messageInput.addEventListener('keypress', (e) => {
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
+
 });
